@@ -26,9 +26,7 @@
             }
         }
         catch (e) {
-			// fails with some external links like youtube
-            //throw e;
+	    // fails with some external links like youtube
         }
     });
-    // Your code here...
 })();
