@@ -17,8 +17,12 @@
             if(ev.target.classList.contains('expando-button')) {
                 var url = ev.target.parentElement.querySelector('.title a').href;
                 var currUrl = window.location.href;
-                history.replaceState({}, '', url);
-                history.replaceState({}, '', currUrl);
+
+		// set clicked URL in the browser URL bar.
+		history.replaceState({}, '', url);
+
+		// reSet current URL
+		history.replaceState({}, '', currUrl);
             }
         }
         catch (e) {
